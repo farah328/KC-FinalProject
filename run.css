@@ -1,7 +1,8 @@
 *{
     padding: 0;
      margin: 0;
-    
+      font-family: 'Nunito', sans-serif;
+      font-family: 'Roboto Mono', monospace;
 }
 
 body{
@@ -26,53 +27,58 @@ body{
 }
 
 .top{
-    width: 60%;
     margin: auto;
-    padding: 2px;
     display: flex;
     text-align: center;
     justify-content: space-between;
-}
+} 
 
-.top ul li {
+.top ul  li  {
    list-style: none;
    display: inline-block;
-   margin: 30px;
-   position: relative;
+   margin:  30px;
+
 }
-.top ul li a {
+.top ul li a{
     text-decoration: none;
     color: #fff;
-    text-transform: uppercase;
+    font-size: 20px;
 }
-
-.top ul li ::after{
-    content: '';
-    height: 3px;
-    width: 0;
-    background-color: black;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    transition: 0.5s;
+.top ul li :hover{
+    color:#c2c5aa;
 }
-
-.top ul li :hover::after{
-    width: 100%;
-}
-
-.top h2 {
- font-size: 20px;
- margin: 25px; 
+.top p {
+ font-size: 15px;
+ margin: 30px; 
  color: #fff;
 }
-.all{ display: flex;
-    justify-content: center;
+.hi{ 
+    text-align: center;
+ }
+.all{
+    display: flex;
+    justify-content: space-evenly;
     flex-direction: row;
-    flex-wrap: wrap;}
-    
-.box ul li{
-  list-style: none;
-  font-weight: bolder;
-  font-size: small;
- } 
+    flex-wrap: wrap;
+} 
+.box{
+    background-color:#8ecae6;
+    width: 520px;
+    display: flex;
+    justify-content: left;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.moo ul{
+    margin-top: 30px;
+    list-style: none;
+    display: inline-block;
+    font-size: 20px;
+    text-decoration: none;
+}
+button{
+    height: 30px;
+    width: 40px;
+    background-color: black;
+    border-radius: 3px;
+}
